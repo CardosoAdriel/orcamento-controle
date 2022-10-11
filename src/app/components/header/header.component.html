@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="toolbar">
+    <figure>
+      <img src="https://www.trainning.com.br/img/trainning-brand.png" alt="" />
+    </figure>
+
+    <h1
+      class="h3"
+      [ngClass]="{
+        colorGreen: orcamento > 0,
+        colorRed: orcamento < 0
+      }"
+    >
+      {{ orcamento | currency }}
+    </h1>
+
+    <mat-icon class="orcamentoIcon" (click)="irParaOrcamento()"
+      fontIcon="attach_money"
+      matTooltip="Altere seu Orçamento"
+      matTooltipPosition="left"
+    ></mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
