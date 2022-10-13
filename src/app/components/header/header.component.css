@@ -2,6 +2,13 @@ img {
   width: 100px;
 }
 
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
 .toolbar {
   max-width: 1280px;
   justify-content: space-evenly;

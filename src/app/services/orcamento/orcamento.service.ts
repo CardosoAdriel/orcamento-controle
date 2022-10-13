@@ -8,7 +8,9 @@ export class OrcamentoService {
 
   private valorOrcamento$ = new BehaviorSubject<number>(0)
 
-  constructor() { }
+  constructor() {
+    console.log(" Fui Inicializado !!")
+  }
 
   getValor(): Observable<number> {
     return this.valorOrcamento$.asObservable()
